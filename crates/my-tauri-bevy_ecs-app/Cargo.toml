@@ -1,0 +1,11 @@
+[package]
+name = "my-tauri-bevy_ecs-app"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy.workspace = true
+
+[features]
+default = ["bevy_dynamic"]
+bevy_dynamic = ["bevy/dynamic_linking"]  # you opt in to Bevy's "dynamic" feature

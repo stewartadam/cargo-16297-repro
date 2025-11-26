@@ -1,0 +1,14 @@
+cargo-features = ["codegen-backend"]
+
+[workspace]
+members = ["crates/*"]
+default-members = ["crates/my-tauri-bevy_ecs-app"]
+resolver = "3" # default for rust 2024
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+[workspace.dependencies]
+bevy = { version = "0.17.2", default-features = false }

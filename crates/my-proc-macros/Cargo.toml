@@ -1,0 +1,11 @@
+[package]
+name = "my-proc-macros"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+my-tauri-bevy_ecs-app = { path = "../my-tauri-bevy_ecs-app" }
+
+[lib]
+proc-macro = true
